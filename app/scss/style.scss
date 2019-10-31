@@ -1,0 +1,67 @@
+@font-face {
+    font-family: 'probapro-regular';
+    src: url('../fonts/probapro/probapro-regular/probapro-regular.eot');
+    src: url('../fonts/probapro/probapro-regular/probapro-regular.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/probapro/probapro-regular/probapro-regular.woff') format('woff'),
+         url('../fonts/probapror/probapro-regular/probapro-regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'probapro-semibold';
+    src: url('../fonts/probapro/probapro-semibold/probapro-semibold.eot');
+    src: url('../fonts/probapro/probapro-semibold/probapro-semibold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/probapro/probapro-semibold/probapro-semibold.woff') format('woff'),
+         url('../fonts/probapror/probapro-semibold/probapro-semibold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+// Core variables and mixins
+
+@import "components/vars";
+
+@import "bootstrap/normalize";
+@import "bootstrap/grid";
+
+@import "components/body";
+
+
+
+@import "components/header";
+
+
+.layout{
+  	flex: 1 0 auto;
+}
+
+.container-fluid{
+	max-width: 1346px;
+	// padding: 0;
+	position: relative;
+	width: 100%;
+}
+
+.page-content{
+
+}
+
+
+
+
+
+
+
+@import "components/workarea";
+
+@import "components/footer";
+
+
+
+
+@import "components/media";
+
+
+
+
+
