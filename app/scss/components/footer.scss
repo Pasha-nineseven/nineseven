@@ -1,3 +1,55 @@
 .page-footer{
 	flex-shrink: 0;
 }
+
+.page-footer__inner{
+	border-top: 2px solid #f8f8f8;
+	display: flex;
+	justify-content:space-between;
+	padding: 41px 0 32px;
+}
+
+.bottom-nav{
+	margin-bottom: 20px;
+	display: flex;
+}
+
+.bottom-nav__link{
+	color: #020e1a;
+	margin-right: 48px;
+	&:last-child{
+		margin-right: 0;
+	}
+}
+
+.page-footer__affress{
+	font-size: 16px;
+}
+
+.reviewed{
+	margin-top: -2px;
+	img{
+		display: block;
+	}
+}
+
+.page-footer-contacts{
+	display: flex;
+	padding: 105px 0 40px;
+	align-items:center;
+	max-width: 850px;
+	margin: 0 auto;
+}
+
+.page-footer-contacts__item{
+	width: 33.333%;
+	text-align: center;
+}
+.page-footer-contacts__top{
+	font-size: 16px;
+	margin-bottom: 10px;
+}
+.page-footer-contacts__link{
+	font-size: 24px;
+	color: $alt-color;
+}

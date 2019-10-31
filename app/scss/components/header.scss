@@ -1,4 +1,28 @@
 .page-header{
-
+	background: #020e1a;
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 79px;
+	z-index: 8;
+	color: #fff;
+	height: 100vh;
+	padding: 24px;
 }
 
+.top-btn__txt{
+	font-size: 24px;
+	color: #fff;
+	display: inline-block;
+	transform-origin: 0 0;
+    transform: rotate(90deg) translate(0, -100%);
+    margin-left: 3px;
+}
+
+.top-btn__icon{
+	display: inline-block;
+	width: 33px;
+	height: 33px;
+	background: url(../img/content/menu.png) no-repeat;
+	margin-bottom: 16px;
+}

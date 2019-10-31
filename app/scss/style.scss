@@ -36,8 +36,8 @@
 }
 
 .container-fluid{
-	max-width: 1346px;
-	// padding: 0;
+	max-width: 1080px;
+	padding: 0;
 	position: relative;
 	width: 100%;
 }
@@ -46,11 +46,145 @@
 
 }
 
+.btn{
+	display: inline-block;
+    border: 2px solid #000;
+    padding: 12px 23px;
+    color: #000;
+    background: #fff;
+    position: relative;
+    &:before{
+    	content: "";
+    	display: block;
+    	width: 100%;
+    	height: 100%;
+    	position: absolute;
+    	top: 4px;
+    	left: 4px;
+    	background: url(../img/content/btn-bg.jpg) repeat;
+    	z-index: -1;
+    }
+}
+
+.breadcrumbs{
+	display: flex;
+	flex-wrap:wrap;
+	margin-bottom: 20px;
+}
+.breadcrumbs__item{
+	margin-bottom: 15px;
+	color: #fff;
+	span{
+		border-bottom: 2px solid #000;
+	    display: inline-block;
+	    line-height: 24px;
+	}
+}
+
+a.breadcrumbs__item:after{
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 6px;
+    height: 10px;
+    background: url(../img/svg/b-arr.svg) no-repeat;
+    margin: -3px 12px 0 10px;
+}
+
+.blog{
+	.container-fluid{
+		padding-right: 252px;
+	}
+}
+.page-top{
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	padding-top: 20px;
+	color: #fff;
+	&+div{
+		padding-top: 77px;
+	}
+}
+.page-title{
+	margin-bottom: 41px;
+	h1{
+		margin-bottom: 0;
+	}
+	&+.author{
+		margin-top: -28px;
+	}
+}
 
 
+.author{
+	display: flex;
+	align-items:center;
+	padding-left: 2px;
+	    position: relative;
+    bottom: -30px;
+    a{
+		color: #fff;
+		border-bottom: 2px solid #000;
+		margin-right: 20px;
+		display: inline-block;
+		line-height: 1.49;
+    	&:last-child{
+    		margin-right: 0;
+    	}
+    }
+}
+
+.author__img{
+	width: 111px;
+	height: 111px;
+	border-radius: 50%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	margin-right: 16px;
+}
+
+.author__person{
+	margin-top: -31px;
+}
+.author__link{
+	margin-left: 1px;
+}
+
+.page-img{
+	margin-bottom:56px;
+	img{
+		max-width: 100%;
+		display: block;
+	}
+}
 
 
+.page-nav{
+	background: #f1f2f2;
+	padding-top: 45px;
+}
+.page-nav__inner{
+	display: flex;
+	transform: translateY(50%);
+}
+.page-nav__item{
+	width: 50%;
+	align-items:center;
+	padding: 29px 28px;
+	font-size: 24px;
+	color: #fff;
+	background: #d83232;
+	margin: 0 1px;
+}
 
+.page-nav__item--next{
+	background: url(../img/content/next-bg.jpg) center/contain no-repeat;
+}
+.page-nav__item--prev{
+	background: url(../img/content/prev-bg.jpg) center/contain no-repeat;
+}
 
 @import "components/workarea";
 

@@ -17,25 +17,104 @@
 		<!--LAYOUT-->
 		<div class="layout">
 			<header class="page-header">
-				<div class="container-fluid">
-					page-header
-					<span></span>
-				</div>
+				<a href="#" class="top-btn">
+					<span class="top-btn__icon"></span>
+					<span class="top-btn__txt">Меню</span>
+				</a>
 			</header>
 			<main class="page-content workarea">
-				<div class="container-fluid">
-				<!-- CONTENT-PART -->
-					<div class="row">
-						<div class="col-sm-3">3</div>
-						<div class="col-sm-9">9</div>
+			<!-- CONTENT-PART -->
+				<div class="page-top" style="background-image: url(img/content/blog-bg.jpg)">
+					<div class="container-fluid">
+						<div class="breadcrumbs">
+							<a href="#" class="breadcrumbs__item"><span>К главной</span></a>
+							<span class="breadcrumbs__item"><span>Блог</span></span>
+						</div>
+						<div class="page-title">
+							<h1>
+								Продажа воздуха или как зарабатывать на продажах SSL-сертификатов
+							</h1>
+						</div>
+						<div class="author">
+							<div class="author__img" style="background-image: url(img/content/author1.jpg);"></div>
+							<div class="author__person">
+								Автор:
+								<a href="#"class="author__link">Дмитрий Хоружко</a>
+								<a href="maito:nine@nineseven.ru" class="author__mail">nine@nineseven.ru</a>
+							</div>
+						</div>
 					</div>
-				<!--end CONTENT-PART -->
 				</div>
+				<div class="blog">
+					<div class="container-fluid">
+						<p>
+							В 2017 году Google решил, что интернет нужно сделать безопаснее и предупредил, что сайты без<br> SSL-сертификатов будут помечаться как небезопасные, со всеми вытекающими. Сами сертификаты существовали и ранее, так как сама технология известна и принялась банками для создания защищенных соединений ещё задолго до 2017 года. Но с этого периода продажа SSL-сертификатов приобрела массовый характер.
+						</p>
+						<h3>
+							Что из себя представляет SSL-сертификат и в целом принцип защищенного HTTPS соединения?
+						</h3>
+						<div class="page-img">
+							<img src="img/content/img1.png" alt="">
+						</div>
+						<p>
+							Когда вы открываете любой сайт, технически это означает что вы через протокол, который так и называется - протокол передачи гипертекста, получаете данные с сервера. И аналогично это работает в обратную сторону, с помощью браузера вы отправляете свои данные на сервер. HTTPS это фактически надстройка над протоколом HTTP, которая означает что данные, что вы отправляете на сервер и забираете с него — зашифрованы.
+						</p>
+						<p>
+							Зачем это нужно? Есть такое понятие как MITM, означает как “Человек посередине”. Это означает, что весь трафик с вашего компьютера будет сначала проходить через посредника, а уже после отправляться по назначению. А учитывая, что протокол HTTP предоставляет данные в открытом виде, то злоумышленник может без проблем получить важные данные, например, данные ваших банковских карт, логины и пароли к вашим учетным данным, например, к почте, или к банковскому аккаунту. 
+						</p>
+					</div>
+				</div>
+				<div class="page-nav">
+					<div class="container-fluid">
+						<div class="page-nav__inner">
+							<a href="#" class="page-nav__item page-nav__item--prev">
+								<div class="page-nav__arrow"></div>
+								<div class="page-nav__txt">Наши услуги</div>
+							</a>
+							<a href="#" class="page-nav__item page-nav__item--next">
+								<div class="page-nav__arrow"></div>
+								<div class="page-nav__txt">Об агентстве</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			<!--end CONTENT-PART -->
 			</main>
 		</div><!-- END LAYOUT-->
 		<footer class="page-footer">
 			<div class="container-fluid">
-				footer
+				<div class="page-footer-contacts">
+					<div class="page-footer-contacts__item">
+						<div class="page-footer-contacts__top">
+							Написать нам на почту
+						</div>
+						<a href="mailto:info@nineseven.ru" class="page-footer-contacts__link">info@nineseven.ru</a>
+					</div>
+					<div class="page-footer-contacts__item">
+						<div class="page-footer-contacts__top">
+							Позвонить
+						</div>
+						<a href="tel:+375295713372" class="page-footer-contacts__link">+375 29 571-33-72</a>
+					</div>
+					<div class="page-footer-contacts__item">
+						<a href="#" class="btn">Презентация компании</a>
+					</div>
+				</div>
+				<div class="page-footer__inner">
+					<div class="page-footer__info">
+						<div class="bottom-nav">
+							<a href="#" class="bottom-nav__link">Услуги</a>
+							<a href="#" class="bottom-nav__link">Работы</a>
+							<a href="#" class="bottom-nav__link">Агентство</a>
+							<a href="#" class="bottom-nav__link">Мероприятия</a>
+							<a href="#" class="bottom-nav__link">Блог</a>
+						</div>
+						<div class="page-footer__affress">Минск, ул. Тимирязева 72, офис 302</div>
+					</div>
+					<div class="reviewed">
+						<img src="img/content/reviewed.png" alt="">
+					</div>
+				</div>
 			</div>
 		</footer>
 			
