@@ -8,6 +8,9 @@
 	color: #fff;
 	height: 100vh;
 	padding: 24px;
+	display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .top-btn__txt{
@@ -25,4 +28,51 @@
 	height: 33px;
 	background: url(../img/content/menu.png) no-repeat;
 	margin-bottom: 16px;
+}
+
+
+
+.page-header__links{
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+    a{
+    	margin: 38px 0;
+    	position: relative;
+    	&:before{
+    		content: "";
+    		display: block;
+    		width: 30px;
+    		height: 1px;
+    		background: #222c37;
+    		position: absolute;
+    		top: -42px;
+    		left: 50%;
+    		transform: translatex(-50%);
+    	}
+    }
+}
+
+.mail-link{
+	display: inline-block;
+	width: 33px;
+	height: 44px;
+	background: url(../img/content/mail.png) center/cover no-repeat;
+}
+
+.pdf-link{
+	display: inline-block;
+	width: 41px;
+	height: 49px;
+	background: url(../img/content/pdf.png) center/cover no-repeat;
+}
+
+.logo{
+	display: inline-block;
+	width: 34px;
+	height: 36px;
+	background: url(../img/content/logo.png) center/cover no-repeat;
+	position: absolute;
+	    left: 23px;
+    top: 23px;
 }

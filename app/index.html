@@ -21,10 +21,15 @@
 					<span class="top-btn__icon"></span>
 					<span class="top-btn__txt">Меню</span>
 				</a>
+				<div class="page-header__links">
+					<a href="#" class="mail-link"></a>
+					<a href="#" class="pdf-link"></a>
+				</div>
 			</header>
 			<main class="page-content workarea">
 			<!-- CONTENT-PART -->
 				<div class="page-top" style="background-image: url(img/content/blog-bg.jpg)">
+					<a href="#" class="logo"></a>
 					<div class="container-fluid">
 						<div class="breadcrumbs">
 							<a href="#" class="breadcrumbs__item"><span>К главной</span></a>
@@ -62,26 +67,130 @@
 						<p>
 							Зачем это нужно? Есть такое понятие как MITM, означает как “Человек посередине”. Это означает, что весь трафик с вашего компьютера будет сначала проходить через посредника, а уже после отправляться по назначению. А учитывая, что протокол HTTP предоставляет данные в открытом виде, то злоумышленник может без проблем получить важные данные, например, данные ваших банковских карт, логины и пароли к вашим учетным данным, например, к почте, или к банковскому аккаунту. 
 						</p>
+						<div class="incut">
+							<div class="incut__txt">
+								SSL-сертификат это три разных ключа, один назывывается публичным и по сути, он доступен всем, второй называется приватным и он доступен только серверу для которого он выпускается, и третий сеансовый. Метод шифрования который используется называется асинхронным, так как он позволяет зашифровать данные приватным ключом, а расшифровать публичным. Удобство данного метода в том, что если сообщение можно расшифровать публичным ключом, то вы можете быть уверены в отправителе, то есть это как криптографический паспорт источника.
+							</div>
+							<div class="incut__add">
+								SSL-сертификат это три ключа — публи- чный, приватный, сеансовый.
+							</div>
+						</div>
+						<div class="highlighted">
+							<h4>Виды валидации бывают трёх типов:</h4>
+							<ol>
+								<li>
+									DV - проверен только домен которому принадлежит сертификат
+								</li>
+								<li>
+									OV - проверена организация и домен сертификата
+								</li>
+								<li>
+									EV  - организация проверена с пристастием и проверен домен
+								</li>
+							</ol>
+						</div>
+						<h4>И нужен стиль для буллитов</h4>
+						<ul>
+							<li>
+								DV - проверен только домен которому принадлежит сертификат
+							</li>
+							<li>
+								OV - проверена организация и домен сертификата
+							</li>
+							<li>
+								EV  - организация проверена с пристастием и проверен домен
+							</li>
+						</ul>	
+						<div class="accordeon">
+							<div class="accordeon__item">
+								<a href="#" class="accordeon__link">
+									Что вам следует знать при покупке сертификата?
+								</a>
+								<div class="accordeon__info">
+									Работа была проделана гигантская, не только на уровне программирования, но и на уровне документооборота и нашего понимания бизнес-процессов. По сути, мы не только оцифровали наш контур управления, но и значительно его изменили (пересобрали заново). 
+								</div>
+							</div>
+							<div class="accordeon__item">
+								<a href="#" class="accordeon__link">
+									Что вам следует знать при покупке сертификата?
+								</a>
+								<div class="accordeon__info">
+									Работа была проделана гигантская, не только на уровне программирования, но и на уровне документооборота и нашего понимания бизнес-процессов. По сути, мы не только оцифровали наш контур управления, но и значительно его изменили (пересобрали заново). 
+								</div>
+							</div>
+						</div>
+						<p>
+							Потом выбрать сайт, к которому нужно выпустить сертификат, и нажать пару раз “Да”.
+						</p>
+						<p>
+							Суммарно это занимает несколько минут и экономит 10-20$ в год. Сертификат выдаётся сроком на три месяца (это сделано специально чтобы <a href="#">постоянно проверять</a> ваш домен) и при установке можно настроить автоматическое продление.
+						</p>
+						<p>
+							Для популярных панелей управления хостингом, CPanel и ISPpanel предусмотрены модули, которые в пару кликов позволяют получить сертификат на домен. Например, в ISP это так:
+						</p>
 					</div>
 				</div>
-				<div class="page-nav">
+				<div class="publications">
+					<div class="publications__img">
+						<img src="img/content/publication1.png" alt="">
+					</div>
 					<div class="container-fluid">
-						<div class="page-nav__inner">
-							<a href="#" class="page-nav__item page-nav__item--prev">
-								<div class="page-nav__arrow"></div>
-								<div class="page-nav__txt">Наши услуги</div>
-							</a>
-							<a href="#" class="page-nav__item page-nav__item--next">
-								<div class="page-nav__arrow"></div>
-								<div class="page-nav__txt">Об агентстве</div>
-							</a>
+						<h3>Другие материалы Дмитрия</h3>
+						<div class="publications__wrap">
+							<div class="publications__item">
+								<a href="#" class="publications__top">
+									Как мы ведем проекты
+								</a>
+								<div class="publications__txt">
+									Кроме ежедневной поддержки сайта, мы так же отвечаем за редизайн и все обновления
+								</div>
+							</div>
+							<div class="publications__item">
+								<a href="#" class="publications__top">
+									Как устроены чат-боты и как их использовать на практике?
+								</a>
+								<div class="publications__txt">
+									И поддержка в течение последних 5 лет, конечно.
+								</div>
+							</div>
+							<div class="publications__item">
+								<a href="#" class="publications__top">
+									Настройки безопасности для сайта банка
+								</a>
+								<div class="publications__txt">
+									В момент когда смартфоны только начали набирать популярность мы уже внедряли мобильные версии.
+								</div>
+							</div>
+							<div class="publications__item">
+								<a href="#" class="publications__top">
+									Стандарты внедрения Битрикс: текстовый шаблон
+								</a>
+								<div class="publications__txt">
+									В момент когда смартфоны только начали набирать популярность мы уже внедряли мобильные версии.
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
+				
 			<!--end CONTENT-PART -->
 			</main>
 		</div><!-- END LAYOUT-->
 		<footer class="page-footer">
+			<div class="page-nav">
+				<div class="container-fluid">
+					<div class="page-nav__inner">
+						<a href="#" class="page-nav__item page-nav__item--prev">
+							<div class="page-nav__arrow"></div>
+							<div class="page-nav__txt">Наши услуги</div>
+						</a>
+						<a href="#" class="page-nav__item page-nav__item--next">
+							<div class="page-nav__arrow"></div>
+							<div class="page-nav__txt">Об агентстве</div>
+						</a>
+					</div>
+				</div>
+			</div>
 			<div class="container-fluid">
 				<div class="page-footer-contacts">
 					<div class="page-footer-contacts__item">

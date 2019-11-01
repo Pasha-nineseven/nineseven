@@ -4,6 +4,13 @@ $(document).ready(function() {
 	// 	e.preventDefault();
 	// })
 
+
+	//ACCORDEON
+    $("body").on("click", ".accordeon__link", function(e){
+        e.preventDefault();
+        $(this).parents('.accordeon__item').toggleClass('active');
+        $(this).next('.accordeon__info').slideToggle();
+    });
 });
 
 
