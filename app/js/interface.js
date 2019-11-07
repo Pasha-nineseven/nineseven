@@ -28,6 +28,7 @@ $(document).ready(function() {
 				useTransform:true,
 				"accessibility": false,
 				appendArrows: $('.slider-nav', this),
+				//variableWidth:true,
 	  			// responsive: [
 				  //   {
 				  //     	breakpoint: 850,
@@ -52,6 +53,48 @@ $(document).ready(function() {
 		});
 		$('.slider-nav__prev').click(function(){
 		  	$(this).parents('.work__title').next('.work-slider-wrap').find('.work-slider').slick('slickPrev');
+		});
+	}
+
+	//WORK SLIDER-variable
+	if ($('.work-slider-variable').length>0) {
+		var $slider = $('.work-slider-variable');
+		$slider.each(function() {
+			$(this).slick({
+				infinite: false,
+				slidesToShow: 2,
+				slidesToScroll: 1,
+				lazyLoad: 'progressive',
+				dots:false,
+				arrows:true,
+				useTransform:true,
+				"accessibility": false,
+				appendArrows: $('.slider-nav', this),
+				variableWidth:true,
+	  			// responsive: [
+				  //   {
+				  //     	breakpoint: 850,
+				  //     	settings: {
+					 //        slidesToShow: 2,
+						// 	slidesToScroll: 1,
+				  //   	}
+				  //   },
+				  //   {
+				  //     	breakpoint: 650,
+				  //     	settings: {
+					 //        slidesToShow: 1,
+						// 	slidesToScroll: 1,
+				  //   	}
+				  //   },
+			   //  ]
+			});
+		});
+
+		$('.slider-nav__next').click(function(){
+		  	$(this).parents('.work__title').next('.work-slider-wrap').find('.work-slider-variable').slick('slickNext');
+		});
+		$('.slider-nav__prev').click(function(){
+		  	$(this).parents('.work__title').next('.work-slider-wrap').find('.work-slider-variable').slick('slickPrev');
 		});
 	}
 });
@@ -80,7 +123,7 @@ $('body').append(
 		#pages li { margin: 5px 0; } \
 	</style> \
 	<ol id="pages"> \
-		<li><a href="services.html">sevices</a></li> \
+		<li><a href="Services.html">Services</a></li> \
 		<li><a href="index.html">Index</a></li> \
 		<li><a href="portfolio.html">Portfolio</a></li> \
 	</ol> \

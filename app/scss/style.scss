@@ -515,6 +515,8 @@ a.breadcrumbs__item:after{
 	padding: 30px 0;
 }
 
+
+
 .work__wrap{
 	display: flex;
 
@@ -563,7 +565,8 @@ a.breadcrumbs__item:after{
 	margin-top: -3px;
 }
 
-.work-slider{
+.work-slider,
+.work-slider-variable{
 	display: none;
 	&.slick-initialized{
 		display: block;
@@ -625,7 +628,7 @@ a.breadcrumbs__item:after{
 }
 
 .partners{
-	padding: 45px 0;
+	padding: 45px 0 4px 0;
 }
 
 .partners__wrap{
@@ -639,17 +642,26 @@ a.breadcrumbs__item:after{
 	padding-right: 25px;
 	display: flex;
 	justify-content: center;
-	margin-bottom: 45px;
+	margin-bottom: 42px;
 	img{
 		display: block;
 	}
 }
 
 .releases{
-	padding: 45px 0;
+	padding: 45px 0 67px 0;
 	background: #f1f2f2;
+	position: relative;
 }
-
+.releases__bg{
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translate(0%, -50%);
+    img{
+    	display: block;
+    }
+}
 .releases__wrap{
 	display: flex;
 	justify-content: space-between;
@@ -662,7 +674,7 @@ a.breadcrumbs__item:after{
 .releases__item{
 	position: relative;
 	font-size: 16px;
-	padding: 30px 10px;
+	padding: 30px 2px;
 }
 .releases__num{
 	position: absolute;
@@ -677,12 +689,17 @@ a.breadcrumbs__item:after{
 .releases__link{
 	color: #000;
 	border-bottom: 2px solid $alt-color;
+	transition: all 0.3s ease;
+	&:hover{
+		border-bottom: 2px solid transparent;
+	}
 }
 
 .releases__date,
 .releases__link{
 	position: relative;
 	z-index: 1;
+	line-height: 1;
 }
 
 .work-company{
@@ -698,6 +715,84 @@ a.breadcrumbs__item:after{
 		display: block;
 	}
 }
+
+
+.work--portfolio{
+	    padding: 50px 0 30px;
+	.work__item{
+		padding-bottom: 80px;
+		border-bottom: 1px solid #d6d6d6;
+		height: auto!important;
+		margin-right: 26px;
+		position: relative;
+	}
+	.slick-track{
+		display: flex;
+		min-width: 100%;
+	}
+	.work__top,
+	.work__info{
+		position: relative;
+		z-index: 1;
+	}
+	.slick-list{
+		margin-right: -26px;
+	}
+	.work-slider-wrap{
+		margin-top: 0;
+	}
+}
+
+.work__img{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 235px;
+    height: 340px;
+}
+
+.work-slider-variable{
+
+	.work__item{
+		width: 260px;
+		&.work__item--double{
+			width: 520px;
+		}
+	}
+}
+
+.page-top__btn{
+	padding: 30px 0 35px;
+	.btn{
+		font-size: 24px;
+		&:before{
+	     	background: url(../img/content/btn-bg-alt.png) repeat;
+	     	top: 2px;
+    		left: 2px;
+	    }
+	}
+	.btn__in{
+	    padding: 6px 23px;
+	   
+	}
+}
+
+.work-company__logo{
+	margin-bottom: 34px;
+}
+
+.work__item--double {
+	.work__top{
+		font-size: 48px;
+	}
+	.work__info{
+		font-size: 24px;
+	}
+}
+
 
 @import "components/footer";
 
