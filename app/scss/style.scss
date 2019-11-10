@@ -56,8 +56,8 @@
     	width: 100%;
     	height: 100%;
     	position: absolute;
-    	top: 4px;
-    	left: 4px;
+    	top: 2px;
+    	left: 2px;
     	background: url(../img/content/btn-bg.jpg) repeat;
     	z-index: 1;
     }
@@ -158,6 +158,7 @@ a.breadcrumbs__item:after{
 
 .author__img{
 	width: 111px;
+	min-width: 111px;
 	height: 111px;
 	border-radius: 50%;
 	background-size: cover;
@@ -636,6 +637,8 @@ a.breadcrumbs__item:after{
 	align-items: center;
 	flex-wrap:wrap;
 	margin-right: -25px;
+	position: relative;
+	z-index: 1;
 }
 
 .partners__item{
@@ -793,6 +796,16 @@ a.breadcrumbs__item:after{
 	}
 }
 
+body.fixed {
+    overflow: hidden;
+}
+.scrollbar-measure {
+	width: 100px;
+	height: 100px;
+	overflow: scroll;
+	position: absolute;
+	top: -9999px;
+}
 
 @import "components/footer";
 

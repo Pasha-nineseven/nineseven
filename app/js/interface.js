@@ -1,9 +1,44 @@
 $(document).ready(function() {
 	flexibility(document.documentElement);
-	// $("body").on("click", ".test", function(e){
-	// 	e.preventDefault();
-	// })
 
+	// Create the measurement node
+    const scrollDiv = document.createElement("div");
+    scrollDiv.className = "scrollbar-measure";
+
+	//MENU
+    $("body").on("click", ".js-top-btn", function(e){
+        e.preventDefault();
+        const toggleText = $(this).find('.top-btn__txt');
+		//scroll-detect
+		const ifHasScroll = $('body').hasVerticalScrollBar();
+        if ( $(this).is( ".active" ) ) {
+		    $(this).removeClass('active');
+		    $('.top-menu').hide();
+		    toggleText.text('Меню');
+		    document.body.removeChild(scrollDiv);
+		    $('.page-header').removeClass('active');
+			setTimeout(function (){
+			    $('body').removeAttr("style");
+			    $( 'body' ).removeClass('fixed');
+			    $('.page-header').css('margin-right',0);
+			    
+		    	
+			}, 400);
+		} else{
+        	$(this).addClass('active');
+        	$('.page-header').addClass('active');
+        	$('.top-menu').show();
+        	toggleText.text('Закрыть');
+        	if (ifHasScroll) {
+        		document.body.appendChild(scrollDiv);
+        		const scrollbarWidth = scrollDiv.offsetWidth - scrollDiv.clientWidth;
+    			
+			    $('body').addClass('fixed');
+			    $('body').css('padding-right',scrollbarWidth);
+			    $('.page-header').css('margin-right',scrollbarWidth);
+			}
+		}
+    });
 
 	//ACCORDEON
     $("body").on("click", ".accordeon__link", function(e){
@@ -12,11 +47,9 @@ $(document).ready(function() {
         $(this).next('.accordeon__info').slideToggle();
     });
 
-
-
     //WORK SLIDER
 	if ($('.work-slider').length>0) {
-		var $slider = $('.work-slider');
+		const $slider = $('.work-slider');
 		$slider.each(function() {
 			$(this).slick({
 				infinite: false,
@@ -58,7 +91,7 @@ $(document).ready(function() {
 
 	//WORK SLIDER-variable
 	if ($('.work-slider-variable').length>0) {
-		var $slider = $('.work-slider-variable');
+		const $slider = $('.work-slider-variable');
 		$slider.each(function() {
 			$(this).slick({
 				infinite: false,
@@ -99,6 +132,11 @@ $(document).ready(function() {
 	}
 });
 
+(function($) {
+    $.fn.hasVerticalScrollBar = function() {
+        return this.get(0) ? parseInt( this.get(0).scrollHeight ) > parseInt( this.innerHeight() ) : false;
+    };
+})(jQuery);
 
 
 
