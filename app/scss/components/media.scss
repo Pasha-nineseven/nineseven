@@ -163,6 +163,47 @@
 	.cases{
 		padding: 20px 0;
 	}
+	.partners {
+	    padding: 25px 0 4px 0;
+	}
+	.partners__wrap{
+		margin-right: -15px;
+	}
+	.partners__item {
+	    padding-right: 15px;
+	    margin-bottom: 20px;
+	}
+	.releases__wrap {
+	    justify-content: flex-start;
+	}
+	.releases__item {
+	    margin-right: 47px;
+	    &:last-child{
+	    	margin-right: 0;
+	    }
+	}
+	.releases {
+	    padding: 20px 0;
+	}
+	.work__item--double .work__top {
+	    font-size: 24px;
+	}
+	.work__item--double .work__info {
+	    font-size: 16px;
+	}
+	.work--portfolio .work__item {
+	    padding-bottom: 15px;
+	}
+	.work__img {
+	    width: 150px;
+	    height: 190px;
+	}
+	.work-slider-variable .work__item.work__item--double {
+	    width: 320px;
+	}
+	.work-slider-variable .work__item{
+	  
+	}
 }
 
 @media screen and (max-width: 850px){
@@ -440,6 +481,34 @@
 	}
 	.cases-add {
 	    padding: 20px 0;
+	}
+	.partners__item{
+		display: none;
+		&:nth-child(1),
+		&:nth-child(2),
+		&:nth-child(3),
+		&:nth-child(4),
+		&:nth-child(5){
+			display: block;
+		}
+	}
+	.partners__wrap {
+	    justify-content: center;
+	}
+	.work--portfolio .work-slider-wrap {
+	    overflow: hidden;
+	}
+	.work--portfolio {
+	    padding: 20px 0;
+	}
+	.work-company {
+	    max-width: 50%;
+	}
+	.work-company__time{
+		margin-bottom: 0;
+	}
+	.work-company__logo {
+	    margin-bottom: 0;
 	}
 }
 

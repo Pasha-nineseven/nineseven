@@ -668,6 +668,27 @@ a.breadcrumbs__item:after{
 .releases__wrap{
 	display: flex;
 	justify-content: space-between;
+	overflow-y: hidden;
+	overflow-x: auto;
+}
+
+.releases__wrap::-webkit-scrollbar {
+  width: 7px;
+  height: 4px;
+}
+
+/* Track */
+
+.releases__wrap::-webkit-scrollbar-track {
+  background: rgba(255,255,255,0.5);
+  border-radius: 5px;
+}
+
+/* Handle */
+
+.releases__wrap::-webkit-scrollbar-thumb {
+  	background: #dd245b;
+  	border-radius: 5px;
 }
 
 .releases__title{
@@ -716,6 +737,7 @@ a.breadcrumbs__item:after{
 .work-company__logo{
 	img{
 		display: block;
+		max-width: 100%;
 	}
 }
 
