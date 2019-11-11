@@ -130,6 +130,58 @@ $(document).ready(function() {
 		  	$(this).parents('.work__title').next('.work-slider-wrap').find('.work-slider-variable').slick('slickPrev');
 		});
 	}
+
+
+
+
+	//PRESENTATIONS SLIDER
+	if ($('.presentations-slider').length>0) {
+		const $slider = $('.presentations-slider');
+		$slider.each(function() {
+			$(this).slick({
+				infinite: false,
+				slidesToShow: 2,
+				slidesToScroll: 1,
+				lazyLoad: 'progressive',
+				dots:false,
+				arrows:true,
+				useTransform:true,
+				"accessibility": false,
+				appendArrows: $('.slider-nav', this),
+				//variableWidth:true,
+	  			responsive: [
+				    {
+				      	breakpoint: 900,
+				      	settings: {
+					        slidesToShow: 1,
+							slidesToScroll: 1,
+				    	}
+				    },
+				    {
+				      	breakpoint: 850,
+				      	settings: {
+					        slidesToShow: 2,
+							slidesToScroll: 1,
+				    	}
+				    },
+				    {
+				      	breakpoint: 600,
+				      	settings: {
+					        slidesToShow: 1,
+							slidesToScroll: 1,
+				    	}
+				    },
+			    ]
+			});
+		});
+
+		$('.slider-nav__next').click(function(){
+		  	$(this).parents('.presentations__title').next('.presentations-slider-wrap').find('.presentations-slider').slick('slickNext');
+		});
+		$('.slider-nav__prev').click(function(){
+		  	$(this).parents('.presentations__title').next('.presentations-slider-wrap').find('.presentations-slider').slick('slickPrev');
+		});
+	}
 });
 
 (function($) {
@@ -164,5 +216,6 @@ $('body').append(
 		<li><a href="services.html">Services</a></li> \
 		<li><a href="index.html">Index</a></li> \
 		<li><a href="portfolio.html">Portfolio</a></li> \
+		<li><a href="expert.html">Expert</a></li> \
 	</ol> \
 </div>');

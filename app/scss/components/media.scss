@@ -57,6 +57,22 @@
 	.cases-add__list {
 	    column-gap: 20px;
 	}
+	.presentations__link {
+	    height: 195px;
+	}
+}
+
+@media screen and (max-width: 1100px){
+	.presentations__item {
+	    padding: 0 5px;
+	}
+	.presentations-slider .slick-list {
+	    margin: 0 -5px;
+	    overflow: visible;
+	}
+	.presentations__link {
+	    height: 175px;
+	}
 }
 
 
@@ -95,7 +111,8 @@
 	}
 	.publications__img,
 	.releases__bg,
-	.services__bg{
+	.services__bg,
+	.expert__img{
 		display: none;
 	}
 	.publications__wrap {
@@ -204,6 +221,30 @@
 	.work-slider-variable .work__item{
 	  
 	}
+	.releases__wrap{
+		overflow-y: hidden;
+		overflow-x: auto;
+	}
+	.person-contact {
+	    font-size: 18px;
+	}
+	.page-person__img {
+	    margin-bottom: 20px;
+	}
+	.expert {
+	    padding: 30px 0;
+	}
+}
+
+@media screen and (max-width: 900px){
+	.presentations__link {
+	    height: 275px;
+	}
+	.person-mail {
+	    margin-right: 0;
+	    display: block;
+	    margin-bottom: 15px;
+	}
 }
 
 @media screen and (max-width: 850px){
@@ -222,11 +263,31 @@
 		padding-left: 25px;
 	}
 	.work__wrap,
-	.cases-add__wrap{
+	.cases-add__wrap,
+	.presentations__wrap,
+	.partners-wrapper,
+	.expert__wrap{
 		flex-wrap:wrap;
 	}
+	.expert__wrap{
+		margin-right: 0;
+	}
+	.expert__item{
+		width: 100%;
+		padding: 0;
+		margin-bottom: 20px;
+		&:last-child{
+			margin-bottom: 0;
+		}
+	}
+	.expert__add {
+	    font-size: 20px;
+	    padding-top: 0;
+	}
 	.work__title,
-	.cases-add__title{
+	.cases-add__title,
+	.presentations__title,
+	.partners__title{
 		width: 100%;
 		min-width: 100%;
 		display: flex;
@@ -244,6 +305,9 @@
 		.btn__in {
 		    padding: 12px 10px;
 		}
+	}
+	.presentations__link {
+	    height: 180px;
 	}
 }
 
@@ -510,6 +574,9 @@
 	.work-company__logo {
 	    margin-bottom: 0;
 	}
+	.presentations {
+	    padding: 30px 0;
+	}
 }
 
 @media screen and (max-width: 600px){
@@ -609,4 +676,54 @@
 		    margin-right: -100px;
 		}
 	}
+	.presentations__link {
+	    height: 285px;
+	}
+	.page-person__position {
+	    font-size: 18px;
+	    margin-bottom: 20px;
+	}
+	.page-person{
+		flex-wrap:wrap;
+	}
+	.page-person__img {
+	    width: 100%;
+	    height: 260px;
+	    padding-right: 0;
+	    img{
+	    	max-height: 100%;
+	    }
+	}
+	.page-person__info {
+	    width: 100%;
+	    padding-left: 0;
+	}
+	.label {
+	    padding: 4px 10px 5px 10px;
+	    margin-right: 3px;
+	    margin-bottom: 3px;
+	}
+	.person-labels {
+	    margin-bottom: 15px;
+	}
+	.publications__title{
+		flex-wrap: wrap;
+		h3{
+			width: 100%;
+		}
+	}
+	.publications__title .btn {
+	    margin-left: 0;
+	}
 }	
+
+@media screen and (max-width: 500px){
+	.presentations__link {
+	    height: 200px;
+	}
+}
+@media screen and (max-width: 400px){
+	.presentations__link {
+	    height: 150px;
+	}
+}
