@@ -23,6 +23,15 @@
 	.top-menu {
 	    padding: 75px 0 60px;
 	}
+	.cases__info {
+	    padding-left: 36px;
+	}
+	.cases__txt{
+		font-size: 18px;
+	}
+	.work__top {
+	    line-height: 1.1;
+	}
 }
 @media screen and (max-width: 1250px){
 	.page-top {
@@ -45,12 +54,21 @@
 	    width: 190px;
 	    height: 270px;
 	}
+	.cases-add__list {
+	    column-gap: 20px;
+	}
 }
 
 
 @media screen and (max-width: 1023px){
+	.workarea {
+	    line-height: 1.2;
+	}
 	.workarea h1{
 		font-size: 50px;
+	}
+	.workarea h2{
+		font-size: 36px;
 	}
 	.incut__add {
 	    font-size: 24px;
@@ -76,7 +94,8 @@
 	    padding-right: 100px;
 	}
 	.publications__img,
-	.releases__bg{
+	.releases__bg,
+	.services__bg{
 		display: none;
 	}
 	.publications__wrap {
@@ -122,6 +141,28 @@
 	.top-transition {
 	    margin-bottom: 20px;
 	}
+	.services__title {
+	    font-size: 24px;
+	    line-height: 1.1;
+	}
+	.services__item--lg .services__title {
+	    font-size: 24px;
+	}
+	.services__item--lg .services__txt{
+		font-size: 16px;
+	}
+	.services__item{
+		padding: 20px 0;
+		width: 100%;
+		margin-right: 0;
+	}
+	.services__wrap{
+		flex-wrap:wrap;
+		margin-right: 0;
+	}
+	.cases{
+		padding: 20px 0;
+	}
 }
 
 @media screen and (max-width: 850px){
@@ -138,6 +179,30 @@
 	}
 	.top-service__item{
 		padding-left: 25px;
+	}
+	.work__wrap,
+	.cases-add__wrap{
+		flex-wrap:wrap;
+	}
+	.work__title,
+	.cases-add__title{
+		width: 100%;
+		min-width: 100%;
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 20px;
+		h3{
+			margin-bottom: 0;
+		}
+	}
+	.cases-add__list{
+		padding: 0;
+		column-count: auto;
+	}
+	.page-footer{
+		.btn__in {
+		    padding: 12px 10px;
+		}
 	}
 }
 
@@ -357,6 +422,25 @@
 			margin-bottom: 10px;
 		}
 	}
+	.page-top__add {
+	    font-size: 18px;
+	}
+	.cases__item{
+		flex-wrap:wrap;
+	}
+	.cases__img{
+		position: static;
+		width: 100%;
+		height: 260px;
+		margin-bottom: 20px;
+	}
+	.cases__info {
+	    padding: 0px 0 20px;
+	    width: 100%;
+	}
+	.cases-add {
+	    padding: 20px 0;
+	}
 }
 
 @media screen and (max-width: 600px){
@@ -415,5 +499,45 @@
 	}
 	.blog {
 	    padding-top: 20px;
+	}
+	.top-menu-links__item {
+	    padding-right: 10px;
+	    margin-right: 10px;
+	    &:last-child{
+	    	margin-right: 0;
+	    	padding-right: 0;
+	    }
+	}
+	.work__title h3 {
+	    max-width: 50%;
+	}
+	.cases__img {
+	    height: 120px;
+	}
+	.work__top {
+	    font-size: 18px;
+	}
+	.cases-add {
+	    padding: 20px 0 0;
+	}
+	.services__item--lg .services__title,
+	.services__title{
+	    font-size: 18px;
+	    margin-bottom: 10px;
+	}
+	.services__item{
+		border-bottom: 0;
+		padding: 0 0 20px 0;
+	}
+	.services {
+	    padding: 15px 0;
+	}
+	.work{
+		overflow: hidden;
+	}
+	.work-slider{
+		.slick-list {
+		    margin-right: -100px;
+		}
 	}
 }	

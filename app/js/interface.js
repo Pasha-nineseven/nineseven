@@ -62,22 +62,22 @@ $(document).ready(function() {
 				"accessibility": false,
 				appendArrows: $('.slider-nav', this),
 				//variableWidth:true,
-	  			// responsive: [
-				  //   {
-				  //     	breakpoint: 850,
-				  //     	settings: {
-					 //        slidesToShow: 2,
-						// 	slidesToScroll: 1,
-				  //   	}
-				  //   },
-				  //   {
-				  //     	breakpoint: 650,
-				  //     	settings: {
-					 //        slidesToShow: 1,
-						// 	slidesToScroll: 1,
-				  //   	}
-				  //   },
-			   //  ]
+	  			responsive: [
+				    {
+				      	breakpoint: 1023,
+				      	settings: {
+					        slidesToShow: 2,
+							slidesToScroll: 1,
+				    	}
+				    },
+				    {
+				      	breakpoint: 600,
+				      	settings: {
+					        slidesToShow: 2,
+							slidesToScroll: 1,
+				    	}
+				    },
+			    ]
 			});
 		});
 
@@ -161,7 +161,7 @@ $('body').append(
 		#pages li { margin: 5px 0; } \
 	</style> \
 	<ol id="pages"> \
-		<li><a href="Services.html">Services</a></li> \
+		<li><a href="services.html">Services</a></li> \
 		<li><a href="index.html">Index</a></li> \
 		<li><a href="portfolio.html">Portfolio</a></li> \
 	</ol> \
