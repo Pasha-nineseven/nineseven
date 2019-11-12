@@ -112,13 +112,6 @@ $(document).ready(function() {
 							slidesToScroll: 1,
 				    	}
 				    },
-				   //  {
-				   //    	breakpoint: 650,
-				   //    	settings: {
-					  //       slidesToShow: 1,
-							// slidesToScroll: 1,
-				   //  	}
-				   //  },
 			    ]
 			});
 		});
@@ -130,8 +123,6 @@ $(document).ready(function() {
 		  	$(this).parents('.work__title').next('.work-slider-wrap').find('.work-slider-variable').slick('slickPrev');
 		});
 	}
-
-
 
 
 	//PRESENTATIONS SLIDER
@@ -148,7 +139,6 @@ $(document).ready(function() {
 				useTransform:true,
 				"accessibility": false,
 				appendArrows: $('.slider-nav', this),
-				//variableWidth:true,
 	  			responsive: [
 				    {
 				      	breakpoint: 900,
@@ -182,6 +172,58 @@ $(document).ready(function() {
 		  	$(this).parents('.presentations__title').next('.presentations-slider-wrap').find('.presentations-slider').slick('slickPrev');
 		});
 	}
+
+
+
+
+	//REVIEWS SLIDER
+	if ($('.reviews-slider').length>0) {
+		const $slider = $('.reviews-slider');
+		$slider.each(function() {
+			$(this).slick({
+				infinite: false,
+				slidesToShow: 8,
+				slidesToScroll: 1,
+				lazyLoad: 'progressive',
+				dots:false,
+				arrows:true,
+				useTransform:true,
+				"accessibility": false,
+				appendArrows: $('.slider-nav', this),
+				centerMode: true,
+	  			responsive: [
+				    {
+				      	breakpoint: 900,
+				      	settings: {
+					        slidesToShow: 1,
+							slidesToScroll: 1,
+				    	}
+				    },
+				    {
+				      	breakpoint: 850,
+				      	settings: {
+					        slidesToShow: 2,
+							slidesToScroll: 1,
+				    	}
+				    },
+				    {
+				      	breakpoint: 600,
+				      	settings: {
+					        slidesToShow: 1,
+							slidesToScroll: 1,
+				    	}
+				    },
+			    ]
+			});
+		});
+
+		$('.slider-nav__next').click(function(){
+		  	$(this).parents('.reviews__title').next('.reviews-slider').slick('slickNext');
+		});
+		$('.slider-nav__prev').click(function(){
+		  	$(this).parents('.reviews__title').next('.reviews-slider').slick('slickPrev');
+		});
+	}
 });
 
 (function($) {
@@ -196,9 +238,6 @@ $(window).resize(function () {
 
 });
 
-// $(window).load(function(){
-
-// });
 
 // functions
 
@@ -214,6 +253,7 @@ $('body').append(
 	</style> \
 	<ol id="pages"> \
 		<li><a href="services.html">Services</a></li> \
+		<li><a href="service.html">Service</a></li> \
 		<li><a href="index.html">Index</a></li> \
 		<li><a href="portfolio.html">Portfolio</a></li> \
 		<li><a href="expert.html">Expert</a></li> \

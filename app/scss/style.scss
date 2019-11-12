@@ -1046,6 +1046,173 @@ body.fixed {
 	padding: 61px 0 15px 0;
 }
 
+.gr-sqheme{
+	background: #f1f2f2;
+}
+
+.reviews{
+	    padding: 53px 0 68px;
+	overflow: hidden; 
+}
+
+.reviews__title{
+	width: 276px;
+    min-width: 276px;
+    position: relative;
+    z-index: 1;
+    h3{
+    	line-height: 1;
+    }
+}
+
+.reviews-slider{
+	display: none;
+	padding-top: 257px;
+	&.slick-initialized{
+		display: block;
+	}
+	.slick-track{
+		display: flex;
+		min-width: 100%;
+		align-items: center;
+	}
+}
+.reviews__icon{
+	    display: flex;
+    align-items: center;
+    justify-content: center;
+	img{
+		display: inline-block;
+	}
+}
+.slick-list {
+    overflow: visible;
+ }
+
+.reviews__item{
+	position: relative;
+	color: #fff;
+}
+
+
+.reviews-info{
+	position: absolute;
+	background: #d83234;
+	    padding: 33px 45px 50px 58px;
+	display: flex;
+	    font-size: 24px;
+    width: 805px;
+    bottom: 100%;
+    left: 50%;
+    transform: translate(-50%, -112px);
+    margin-left: 74px;
+    opacity: 0;
+    pointer-evens:none;
+    transition: opacity 0s ease 0s;
+    &:after{
+    	content: "";
+    	position: absolute;
+    	left: 330px;
+    	top: 100%;
+    	width: 0;
+		height: 0;
+		border-style: solid;
+		border-width: 65px 65px 0 0px;
+		border-color: #d83235 transparent transparent transparent;
+    }
+}
+.reviews-info__txt{
+	flex:1;
+	line-height: 1.23;
+	padding-right: 45px;
+}
+
+.reviews-info__img{
+	font-size: 16px;
+	width: 170px;
+	    padding-top: 12px;
+}
+.reviews-info__icon{
+    width: 65px;
+    min-width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 10px;
+}
+.reviews-info__person{
+	line-height: 1.2;
+}
+
+
+.slick-center{
+	.reviews-info{
+	    opacity: 1;
+	    pointer-evens:all;
+	    transition: opacity 0.3s ease 0.4s;
+	}
+}
+
+.order{
+	padding: 29px 0;
+	display: flex;
+	align-items:center;
+	justify-content: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	color: #fff;
+	font-size: 24px;
+	.btn:before {
+	    background: url(../img/content/btn-bg-alt.png) repeat;
+	}
+}
+
+
+.architecture{
+	padding: 40px 0 55px;
+	.architecture__list{
+		padding-left: 0;
+		column-count:2;
+		margin-bottom: 40px;
+	}
+}
+
+.architecture__img{
+	img{
+		display: block;
+	}
+}
+
+.architecture__list{
+	padding-left: 0;
+}
+
+.create{
+	padding: 40px 0;
+	background: #f1f2f2;
+}
+
+.create__list{
+	display: flex;
+	margin-right: -25px;
+}
+
+.create__item{
+	width: 50%;
+	padding-right: 25px;
+}
+.create__top{
+	font-size: 24px;
+	margin-bottom: 10px;
+}
+.create__info{
+	margin-bottom: 20px;
+}
+
+
 @import "components/footer";
 
 
