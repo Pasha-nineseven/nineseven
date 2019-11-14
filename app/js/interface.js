@@ -224,6 +224,25 @@ $(document).ready(function() {
 		  	$(this).parents('.reviews__title').next('.reviews-slider').slick('slickPrev');
 		});
 	}
+
+
+	//TOOLTIP
+	if ($('.tooltip').length>0) {
+		$('.tooltip').tooltipster({
+			animation: 'fade',
+   			delay: 100,
+		});
+	};
+	if ($('.tooltip-content').length>0) {
+		$ ( '.tooltip-content' ). tooltipster ({ 
+    		functionInit : function ( instance , helper ) { var content = $ ( helper . origin ). find ( '.tooltip_content' ). detach (); 
+        		instance . content ( content );
+        	},
+        	distance: 0,
+        	contentAsHTML:true,
+        	interactive: true,
+        });
+	};
 });
 
 (function($) {

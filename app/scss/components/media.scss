@@ -112,7 +112,8 @@
 	.publications__img,
 	.releases__bg,
 	.services__bg,
-	.expert__img{
+	.expert__img,
+	.audit__bg{
 		display: none;
 	}
 	.publications__wrap {
@@ -245,6 +246,12 @@
 	    display: block;
 	    margin-bottom: 15px;
 	}
+	.order{
+		.person-mail {
+			margin-right: 10px;
+			margin-bottom: 0;
+		}
+	}
 }
 
 @media screen and (max-width: 850px){
@@ -287,7 +294,8 @@
 	.work__title,
 	.cases-add__title,
 	.presentations__title,
-	.partners__title{
+	.partners__title,
+	.reviews__title{
 		width: 100%;
 		min-width: 100%;
 		display: flex;
@@ -577,6 +585,63 @@
 	.presentations {
 	    padding: 30px 0;
 	}
+	.audit__wrap,
+	.analytics__wrap{
+		padding-top: 0;
+		flex-wrap:wrap;
+	}
+	.analytics .architecture__list,
+	.audit .architecture__list{
+	    column-count: 1;
+	    padding-top: 0;
+	    width: 100%;
+	}
+	.analytics__title,
+	.audit__title{
+		width: 100%;
+		margin-bottom: 20px;
+	}
+	.analytics__title{
+		padding-right: 0;
+		padding-top: 0;
+	}
+	.audit-download:before{
+		display: none;
+	}
+	.create__list{
+		margin-right: 0;
+		flex-wrap:wrap;
+	}
+	.create__item {
+	    width: 100%;
+	    padding-right: 0;
+	    margin-bottom: 20px;
+	    &:last-child{
+			margin-bottom: 0;
+	    }
+	}
+	.architecture .architecture__list {
+	    column-count: 1;
+	}
+	.page-top__price {
+	    margin: 20px 0;
+	    font-size: 24px;
+	}
+	.page-top__contact .btn {
+	    font-size: 18px;
+	}
+	.order {
+	    padding: 15px 0;
+	    font-size: 18px;
+	    flex-wrap: wrap;
+	}
+	.order .person-mail{
+		margin-right: 0;
+		margin-bottom: 10px;
+		display: block;
+		width: 100%;
+		text-align: center;
+	}
 }
 
 @media screen and (max-width: 600px){
@@ -714,6 +779,16 @@
 	}
 	.publications__title .btn {
 	    margin-left: 0;
+	}
+	.page-top__mail {
+	    margin-right: 0;
+	    display: block;
+	    width: 100%;
+	    border-bottom: 0;
+	    margin-bottom: 20px;
+	}
+	.page-top__contact{
+		flex-wrap:wrap;
 	}
 }	
 
