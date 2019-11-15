@@ -15,7 +15,7 @@
 	</head>
 	<body>
 		<!--LAYOUT-->
-		<div class="layout">
+		<div class="layout layout--index">
 			<header class="page-header">
 				<a href="#" class="top-btn js-top-btn">
 					<span class="top-btn__icon"></span>
@@ -99,153 +99,142 @@
 					</div>
 				</div>
 			</div>
+			
 			<main class="page-content workarea">
 			<!-- CONTENT-PART -->
-				<div class="page-top" style="background-image: url(img/content/blog-bg.jpg)">
+				<div class="page-top" style="background-image: url(img/content/portfolio-bg.jpg)">
 					<a href="#" class="logo"></a>
 					<div class="container-fluid">
-						<div class="breadcrumbs">
-							<a href="#" class="breadcrumbs__item"><span>К главной</span></a>
-							<span class="breadcrumbs__item"><span>Блог</span></span>
-						</div>
 						<div class="page-title">
 							<h1>
-								Продажа воздуха или как зарабатывать на продажах SSL-сертификатов
+								Эксперты<br> в веб-разработке
 							</h1>
 						</div>
-						<div class="author">
-							<div class="author__img" style="background-image: url(img/content/author1.jpg);"></div>
-							<div class="author__person">
-								Автор:
-								<a href="#" class="author__link">Дмитрий Хоружко</a>
-								<a href="maito:nine@nineseven.ru" class="author__mail">nine@nineseven.ru</a>
-							</div>
+						<div class="person-labels__wrap">
+							<span class="label">UX</span>
+							<span class="label">Интерфейсы</span>
+							<span class="label">Высокие нагрузки</span>
+							<span class="label">Интеграции</span>
+							<span class="label">Автоматизация бизнеса</span>
+							<span class="label">1С-битрикс</span>
 						</div>
 					</div>
 				</div>
-				<div class="blog">
+				<div class="partners">
 					<div class="container-fluid">
-						<p>
-							В 2017 году Google решил, что интернет нужно сделать безопаснее и предупредил, что сайты без<br> SSL-сертификатов будут помечаться как небезопасные, со всеми вытекающими. Сами сертификаты существовали и ранее, так как сама технология известна и принялась банками для создания защищенных соединений ещё задолго до 2017 года. Но с этого периода продажа SSL-сертификатов приобрела массовый характер.
-						</p>
-						<h3>
-							Что из себя представляет SSL-сертификат и в целом принцип защищенного HTTPS соединения?
-						</h3>
-						<div class="page-img">
-							<img src="img/content/img1.png" alt="">
+						<div class="partners__wrap">
+							<div class="partners__item"><img src="img/content/partner1.png" alt=""></div>
+							<div class="partners__item"><img src="img/content/partner2.png" alt=""></div>
+							<div class="partners__item"><img src="img/content/partner3.png" alt=""></div>
+							<div class="partners__item"><img src="img/content/partner4.png" alt=""></div>
+							<div class="partners__item"><img src="img/content/partner5.png" alt=""></div>
+							<div class="partners__item"><img src="img/content/partner6.png" alt=""></div>
+							<div class="partners__item"><img src="img/content/partner7.png" alt=""></div>
+							<div class="partners__item"><img src="img/content/partner8.png" alt=""></div>
+							<div class="partners__item"><img src="img/content/partner9.png" alt=""></div>
+							<div class="partners__item"><img src="img/content/partner10.png" alt=""></div>
+							<div class="partners__item"><img src="img/content/partner11.png" alt=""></div>
+							<div class="partners__item"><img src="img/content/partner12.png" alt=""></div>
+							<div class="partners__item"><img src="img/content/partner13.png" alt=""></div>
+							<div class="partners__item"><img src="img/content/partner14.png" alt=""></div>
+							<div class="partners__item"><img src="img/content/partner15.png" alt=""></div>
+							<div class="partners__item"><img src="img/content/partner16.png" alt=""></div>
+							<div class="partners__item"><img src="img/content/partner17.png" alt=""></div>
+							<div class="partners__item"><img src="img/content/partner18.png" alt=""></div>
 						</div>
-						<p>
-							Когда вы открываете любой сайт, технически это означает что вы через протокол, который так и называется - протокол передачи гипертекста, получаете данные с сервера. И аналогично это работает в обратную сторону, с помощью браузера вы отправляете свои данные на сервер. HTTPS это фактически надстройка над протоколом HTTP, которая означает что данные, что вы отправляете на сервер и забираете с него — зашифрованы.
-						</p>
-						<p>
-							Зачем это нужно? Есть такое понятие как MITM, означает как “Человек посередине”. Это означает, что весь трафик с вашего компьютера будет сначала проходить через посредника, а уже после отправляться по назначению. А учитывая, что протокол HTTP предоставляет данные в открытом виде, то злоумышленник может без проблем получить важные данные, например, данные ваших банковских карт, логины и пароли к вашим учетным данным, например, к почте, или к банковскому аккаунту. 
-						</p>
-						<div class="incut">
-							<div class="incut__txt">
-								SSL-сертификат это три разных ключа, один назывывается публичным и по сути, он доступен всем, второй называется приватным и он доступен только серверу для которого он выпускается, и третий сеансовый. Метод шифрования который используется называется асинхронным, так как он позволяет зашифровать данные приватным ключом, а расшифровать публичным. Удобство данного метода в том, что если сообщение можно расшифровать публичным ключом, то вы можете быть уверены в отправителе, то есть это как криптографический паспорт источника.
-							</div>
-							<div class="incut__add">
-								SSL-сертификат это три ключа — публи- чный, приватный, сеансовый.
-							</div>
-						</div>
-						<div class="highlighted">
-							<h4>Виды валидации бывают трёх типов:</h4>
-							<ol>
-								<li>
-									DV - проверен только домен которому принадлежит сертификат
-								</li>
-								<li>
-									OV - проверена организация и домен сертификата
-								</li>
-								<li>
-									EV  - организация проверена с пристастием и проверен домен
-								</li>
-							</ol>
-						</div>
-						<h4>И нужен стиль для буллитов</h4>
-						<ul>
-							<li>
-								DV - проверен только домен которому принадлежит сертификат
-							</li>
-							<li>
-								OV - проверена организация и домен сертификата
-							</li>
-							<li>
-								EV  - организация проверена с пристастием и проверен домен
-							</li>
-						</ul>	
-						<div class="accordeon">
-							<div class="accordeon__item">
-								<a href="#" class="accordeon__link">
-									Что вам следует знать при покупке сертификата?
-								</a>
-								<div class="accordeon__info">
-									Работа была проделана гигантская, не только на уровне программирования, но и на уровне документооборота и нашего понимания бизнес-процессов. По сути, мы не только оцифровали наш контур управления, но и значительно его изменили (пересобрали заново). 
-								</div>
-							</div>
-							<div class="accordeon__item">
-								<a href="#" class="accordeon__link">
-									Что вам следует знать при покупке сертификата?
-								</a>
-								<div class="accordeon__info">
-									Работа была проделана гигантская, не только на уровне программирования, но и на уровне документооборота и нашего понимания бизнес-процессов. По сути, мы не только оцифровали наш контур управления, но и значительно его изменили (пересобрали заново). 
-								</div>
-							</div>
-						</div>
-						<p>
-							Потом выбрать сайт, к которому нужно выпустить сертификат, и нажать пару раз “Да”.
-						</p>
-						<p>
-							Суммарно это занимает несколько минут и экономит 10-20$ в год. Сертификат выдаётся сроком на три месяца (это сделано специально чтобы <a href="#">постоянно проверять</a> ваш домен) и при установке можно настроить автоматическое продление.
-						</p>
-						<p>
-							Для популярных панелей управления хостингом, CPanel и ISPpanel предусмотрены модули, которые в пару кликов позволяют получить сертификат на домен. Например, в ISP это так:
-						</p>
 					</div>
 				</div>
-				<div class="publications">
-					<div class="publications__img">
-						<img src="img/content/publication1.png" alt="">
-					</div>
+				<div class="index-services gr-sqheme">
 					<div class="container-fluid">
-						<h3>Другие материалы Дмитрия</h3>
-						<div class="publications__wrap">
-							<div class="publications__item">
-								<a href="#" class="publications__top">
-									Как мы ведем проекты
+						<div class="row index-services__wrap">
+							<div class="col-md-6 index-services__item">
+								<a href="#" class="index-services__inner">
+									<div class="index-services__title">
+										Разработка сайтов и магазинов
+									</div>
 								</a>
-								<div class="publications__txt">
-									Кроме ежедневной поддержки сайта, мы так же отвечаем за редизайн и все обновления
+							</div>
+							<div class="col-md-6 index-services__item">
+								<a href="#" class="index-services__inner">
+									<div class="index-services__title">
+										Автодилеры
+									</div>
+								</a>
+							</div>
+							<div class="col-md-4 index-services__item">
+								<a href="#" class="index-services__inner">
+									<div class="index-services__title">
+										Высоконагруженные проекты
+									</div>
+								</a>
+							</div>
+							<div class="col-md-4 index-services__item">
+								<a href="#" class="index-services__inner">
+									<div class="index-services__title">
+										Поддержка бизнеса
+									</div>
+								</a>
+							</div>
+							<div class="col-md-4 index-services__item">
+								<a href="#" class="index-services__inner">
+									<div class="index-services__title">
+										Интеграции
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="work">
+					<div class="container-fluid">
+						<div class="work__wrap">
+							<div class="work__title">
+								<h3>Выполненные работы</h3>
+								<div class="slider-nav">
+									<span class="slider-nav__prev"></span>
+									<span>4 кейса</span>
+									<span class="slider-nav__next"></span>
 								</div>
 							</div>
-							<div class="publications__item">
-								<a href="#" class="publications__top">
-									Как устроены чат-боты и как их использовать на практике?
-								</a>
-								<div class="publications__txt">
-									И поддержка в течение последних 5 лет, конечно.
-								</div>
-							</div>
-							<div class="publications__item">
-								<a href="#" class="publications__top">
-									Настройки безопасности для сайта банка
-								</a>
-								<div class="publications__txt">
-									В момент когда смартфоны только начали набирать популярность мы уже внедряли мобильные версии.
-								</div>
-							</div>
-							<div class="publications__item">
-								<a href="#" class="publications__top">
-									Стандарты внедрения Битрикс: текстовый шаблон
-								</a>
-								<div class="publications__txt">
-									В момент когда смартфоны только начали набирать популярность мы уже внедряли мобильные версии.
+							<div class="work-slider-wrap">
+								<div class="work-slider">
+									<div class="work__item">
+										<a href="#" class="work__top" target="_blank">
+											Обновление серии сайтов mts.by
+										</a>
+										<div class="work__info">
+											Кроме ежедневной поддержки сайта, мы так же отвечаем за редизайн и все обновления
+										</div>
+									</div>
+									<div class="work__item">
+										<a href="#" class="work__top" target="_blank">
+											Разработка shop.mts.by
+										</a>
+										<div class="work__info">
+											И поддержка в течение последних 5 лет, конечно.
+										</div>
+									</div>
+									<div class="work__item">
+										<a href="#" class="work__top" target="_blank">
+											Мобильные версии shop и mts.by
+										</a>
+										<div class="work__info">
+											В момент когда смартфоны только начали набирать популярность мы уже внедряли мобильные версии.
+										</div>
+									</div>
+									<div class="work__item">
+										<a href="#" class="work__top" target="_blank">
+											Разработка shop.mts.by
+										</a>
+										<div class="work__info">
+											И поддержка в течение последних 5 лет, конечно.
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-				
 			<!--end CONTENT-PART -->
 			</main>
 		</div><!-- END LAYOUT-->

@@ -195,21 +195,28 @@ $(document).ready(function() {
 				    {
 				      	breakpoint: 900,
 				      	settings: {
-					        slidesToShow: 1,
+					        slidesToShow: 7,
 							slidesToScroll: 1,
 				    	}
 				    },
 				    {
 				      	breakpoint: 850,
 				      	settings: {
-					        slidesToShow: 2,
+					        slidesToShow: 6,
+							slidesToScroll: 1,
+				    	}
+				    },
+				    {
+				      	breakpoint: 700,
+				      	settings: {
+					        slidesToShow: 4,
 							slidesToScroll: 1,
 				    	}
 				    },
 				    {
 				      	breakpoint: 600,
 				      	settings: {
-					        slidesToShow: 1,
+					        slidesToShow: 3,
 							slidesToScroll: 1,
 				    	}
 				    },
@@ -273,8 +280,9 @@ $('body').append(
 	<ol id="pages"> \
 		<li><a href="services.html">Services</a></li> \
 		<li><a href="service.html">Service</a></li> \
-		<li><a href="index.html">Index</a></li> \
+		<li><a href="text.html">Text</a></li> \
 		<li><a href="portfolio.html">Portfolio</a></li> \
 		<li><a href="expert.html">Expert</a></li> \
+		<li><a href="index.html">Index</a></li> \
 	</ol> \
 </div>');
