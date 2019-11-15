@@ -268,6 +268,32 @@
 	.index-services__item.col-md-6 {
 	    min-height: 210px;
 	}
+	.awards__num {
+	    font-size: 75px;
+	}
+	.awards__title {
+	    font-size: 23px;
+	}
+	.awards__num__img{
+		width: 75px;
+		height: 75px;
+	}
+	.awards__title{
+		margin-bottom: 12px;
+	}
+	.awards h2 {
+	    margin-bottom: 15px;
+	}
+	.page-nav-links{
+		margin-right: 0;
+	}
+	.page-nav-links__item {
+	    padding-right: 12px;
+	    padding-left: 12px;
+	}
+	.partners--lg .partners__item {
+	    margin-bottom: 20px;
+	}
 }
 
 @media screen and (max-width: 900px){
@@ -694,6 +720,21 @@
 		padding-left: 0;
 		padding-right: 0;
 	}
+	.layout--about .breadcrumbs {
+	    margin-bottom: 30px;
+	}
+	.awards__list{
+		margin-right: -20px;
+	}
+	.awards__item {
+	    padding-right: 20px;
+	    width: 50%;
+	    padding-top: 28px;
+	    margin-bottom: 13px;
+	}
+	.page-top__link-wrap {
+	    padding: 11px 0;
+	}
 }
 
 @media screen and (max-width: 600px){
@@ -857,6 +898,34 @@
     .reviews-info:after{
     	margin-top: -1px;
     }
+    .page-nav-links__item {
+    	padding-right: 0;
+	    padding-left: 0;
+	    width: 100%;
+	    margin-bottom: 20px;
+	        min-height: 110px;
+	    &:last-child{
+			margin-bottom: 0;
+	    }
+	}
+	.page-nav-links{
+		flex-wrap:wrap;
+	}
+	.partners--lg .partners__item {
+	    width: 50%;
+	    img{
+	    	max-width: 100%;
+	    }
+	}
+	.page-top .awards__list {
+	    padding-top: 20px;
+	}
+	.popup {
+	    padding: 43px 20px 33px;
+	    .btn__in {
+		    padding: 9px 5px;
+		}
+	}
 }	
 
 @media screen and (max-width: 500px){
